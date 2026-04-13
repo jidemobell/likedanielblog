@@ -1,0 +1,27 @@
+{
+	"name": "danielblog",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-vercel": "^6.3.3",
+		"@sveltejs/kit": "^2.57.0",
+		"@sveltejs/vite-plugin-svelte": "^7.0.0",
+		"mdsvex": "^0.12.7",
+		"svelte": "^5.55.2",
+		"vite": "^8.0.7"
+	},
+	"dependencies": {
+		"@popperjs/core": "^2.11.8",
+		"animate.css": "^4.1.1",
+		"bootstrap": "^5.3.8",
+		"bootstrap-icons": "^1.13.1",
+		"wowjs": "^1.1.3"
+	}
+}
