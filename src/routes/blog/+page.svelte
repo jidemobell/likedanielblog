@@ -28,9 +28,9 @@
       {/if}
 
       {#each posts as post}
-        <article class="blog-card mb-4 flex-row" style="flex-direction:row">
+        <article class="blog-card blog-card-h mb-4">
           {#if post.coverImage}
-            <div class="card-img-wrap" style="width:220px;flex-shrink:0;aspect-ratio:4/3">
+            <div class="blog-card-h-img">
               <img
                 src={post.coverImage}
                 alt={post.title}
