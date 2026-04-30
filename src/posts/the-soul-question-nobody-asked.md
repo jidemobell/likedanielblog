@@ -9,7 +9,7 @@ scripture: "Then the Lord God formed a man from the dust of the ground and breat
 scriptureRef: "Genesis 2:7 (NIV)"
 ---
 
-A while back, someone in my Bible study group asked a question that stopped me cold. We were reading Genesis 2:7:
+A while back, someone dropped a question in our WhatsApp prayer group that stopped me cold. He'd been doing his own study and had just read Genesis 2:7:
 
 > *"Then the Lord God formed a man from the dust of the ground and breathed into his nostrils the breath of life, and the man became a living being."*
 
