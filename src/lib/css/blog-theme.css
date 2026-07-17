@@ -87,6 +87,63 @@ a:hover { color: var(--accent); }
 
 img { max-width: 100%; }
 
+/* ---- Dialogue Entry (Thought / Reflection pairs) ---- */
+.thought-entry,
+.reflection-entry {
+  position: relative;
+  padding: 1.1rem 1.5rem;
+  margin: 1.6rem 0;
+  border-radius: var(--radius-md);
+  transition: box-shadow .25s ease;
+}
+
+.thought-entry {
+  background: var(--bg-warm);
+  border-left: 3px solid var(--primary-light);
+}
+
+.reflection-entry {
+  background: #fff;
+  border-left: 3px solid var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.reflection-entry:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.entry-label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: .15rem .65rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: .7rem;
+}
+
+.thought-entry .entry-label {
+  background: var(--primary-light);
+  color: #fff;
+}
+
+.reflection-entry .entry-label {
+  background: var(--accent);
+  color: var(--text-dark);
+}
+
+.thought-entry p:last-child,
+.reflection-entry p:last-child {
+  margin-bottom: 0;
+}
+
+.thought-entry > :first-child,
+.reflection-entry > :first-child {
+  margin-top: 0;
+}
+
 /* ---- Section Title (Jano-inspired) ---- */
 .section-tag {
   font-family: var(--font-body);
