@@ -1,6 +1,4 @@
 <script>
-  import Giscus from '$lib/components/Giscus.svelte';
-
   let { data } = $props();
   const metadata = $derived(data.metadata);
   const Content = $derived(data.content);
@@ -62,7 +60,9 @@
 
       <div class="comments-section">
         <h4>Discussion</h4>
-        <Giscus />
+        <!-- Bauta: anonymous discussion (no account needed) -->
+        <div data-bauta data-site="likedaniel"></div>
+        <script src="https://bauta-api.atensailabhub.workers.dev/widget.js" async defer></script>
       </div>
     </div>
 
