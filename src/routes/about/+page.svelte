@@ -22,8 +22,8 @@
         <h2 class="section-title">A Little About Me</h2>
 
         <p style="font-size:1.05rem; line-height:1.9;">
-          My name is Jide. By profession I'm an engineer. By compulsion I'm a
-          musician. And by some mix of grace and curiosity, I'm someone who can't
+          — Folu to some. By profession I'm an engineer. By compulsion, a
+          guitarist. And by some mix of grace and curiosity, I'm someone who can't
           read a Bible verse without wanting to pull the thread until the whole
           sweater unravels — in the best possible way.
         </p>
