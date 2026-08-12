@@ -7,7 +7,7 @@ excerpt: "Paul doesn't silence tongues in the assembly — he calibrates it. The
 readTime: 8
 ---
 
-There's a question that follows every person who has gone beyond *questioning* the gift of tongues to actually *wondering how to use it*. Paul answers it in 1 Corinthians 14 — not by banning the gift, but by teaching it how to conduct itself in a room. This study is that answer, presented as raw thought beside structured reflection.
+There's a question that follows every believer who has moved past *is the gift real?* into the harder territory of *is it for me?* — Is it necessary? Am I wrong not to speak? And if I should, how do I even begin? Paul answers all of it in 1 Corinthians 14 — not by banning the gift, but by teaching it how to conduct itself in a room. This study is that answer, presented as raw thought beside structured reflection.
 
 ---
 
