@@ -1,5 +1,5 @@
 ---
-title: "The Conduct of Tongues"
+title: "Speaking Mysteries"
 date: "2026-08-04"
 category: "Scripture Study"
 tags: ["tongues", "1-corinthians", "prayer", "interpretation", "edification", "mysteries", "discernment"]
