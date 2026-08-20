@@ -33,6 +33,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/blog">All Posts</a></li>
           <li><a href="/about">About</a></li>
+          <li><a href="/privacy">Privacy</a></li>
         </ul>
       </div>
 
