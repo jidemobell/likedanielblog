@@ -7,7 +7,7 @@ export async function GET() {
   const posts = Object.entries(modules)
     .map(([path, mod]) => {
       const slug = path.replace('/src/posts/', '').replace('.md', '');
-      const { title, date, excerpt, category, coverImage, tags, readTime } =
+      const { title, date, excerpt, category, coverImage, tags, readTime, format } =
         mod.metadata ?? {};
       return {
         slug,
@@ -18,6 +18,7 @@ export async function GET() {
         coverImage: coverImage ?? null,
         tags: tags ?? [],
         readTime: readTime ?? null,
+        format: format ?? 'dialogue',
       };
     })
     .filter((p) => p.title)

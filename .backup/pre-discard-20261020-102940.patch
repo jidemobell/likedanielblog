@@ -1,0 +1,109 @@
+diff --git a/src/app.html b/src/app.html
+index cb8f086..4b6cee0 100644
+--- a/src/app.html
++++ b/src/app.html
+@@ -16,9 +16,6 @@
+ 		<link rel="alternate icon" href="/favicon.svg" />
+ 		<!-- Bootstrap Icons -->
+ 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+-		<!-- Cloudflare Web Analytics -->
+-		<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d8a92fd8722d44a586852fa9e84df622"}'></script>
+-		<!-- End Cloudflare Web Analytics -->
+ 		%sveltekit.head%
+ 	</head>
+ 	<body data-sveltekit-preload-data="hover">
+diff --git a/src/lib/components/Footer.svelte b/src/lib/components/Footer.svelte
+index 2855b65..f046121 100644
+--- a/src/lib/components/Footer.svelte
++++ b/src/lib/components/Footer.svelte
+@@ -33,7 +33,6 @@
+           <li><a href="/">Home</a></li>
+           <li><a href="/blog">All Posts</a></li>
+           <li><a href="/about">About</a></li>
+-          <li><a href="/privacy">Privacy</a></li>
+         </ul>
+       </div>
+ 
+diff --git a/src/lib/css/blog-theme.css b/src/lib/css/blog-theme.css
+index 4ede8d3..78d4899 100644
+--- a/src/lib/css/blog-theme.css
++++ b/src/lib/css/blog-theme.css
+@@ -87,63 +87,6 @@ a:hover { color: var(--accent); }
+ 
+ img { max-width: 100%; }
+ 
+-/* ---- Dialogue Entry (Thought / Reflection pairs) ---- */
+-.thought-entry,
+-.reflection-entry {
+-  position: relative;
+-  padding: 1.1rem 1.5rem;
+-  margin: 1.6rem 0;
+-  border-radius: var(--radius-md);
+-  transition: box-shadow .25s ease;
+-}
+-
+-.thought-entry {
+-  background: var(--bg-warm);
+-  border-left: 3px solid var(--primary-light);
+-}
+-
+-.reflection-entry {
+-  background: #fff;
+-  border-left: 3px solid var(--accent);
+-  box-shadow: var(--shadow-sm);
+-}
+-
+-.reflection-entry:hover {
+-  box-shadow: var(--shadow-md);
+-}
+-
+-.entry-label {
+-  display: inline-block;
+-  font-family: var(--font-body);
+-  font-size: .62rem;
+-  font-weight: 700;
+-  letter-spacing: 2.5px;
+-  text-transform: uppercase;
+-  padding: .15rem .65rem;
+-  border-radius: var(--radius-sm);
+-  margin-bottom: .7rem;
+-}
+-
+-.thought-entry .entry-label {
+-  background: var(--primary-light);
+-  color: #fff;
+-}
+-
+-.reflection-entry .entry-label {
+-  background: var(--accent);
+-  color: var(--text-dark);
+-}
+-
+-.thought-entry p:last-child,
+-.reflection-entry p:last-child {
+-  margin-bottom: 0;
+-}
+-
+-.thought-entry > :first-child,
+-.reflection-entry > :first-child {
+-  margin-top: 0;
+-}
+-
+ /* ---- Section Title (Jano-inspired) ---- */
+ .section-tag {
+   font-family: var(--font-body);
+diff --git a/src/routes/about/+page.svelte b/src/routes/about/+page.svelte
+index f92a71e..221f447 100644
+--- a/src/routes/about/+page.svelte
++++ b/src/routes/about/+page.svelte
+@@ -22,8 +22,8 @@
+         <h2 class="section-title">A Little About Me</h2>
+ 
+         <p style="font-size:1.05rem; line-height:1.9;">
+-          — Folu to some. By profession I'm an engineer. By compulsion, a
+-          guitarist. And by some mix of grace and curiosity, I'm someone who can't
++          My name is Jide. By profession I'm an engineer. By compulsion I'm a
++          musician. And by some mix of grace and curiosity, I'm someone who can't
+           read a Bible verse without wanting to pull the thread until the whole
+           sweater unravels — in the best possible way.
+         </p>

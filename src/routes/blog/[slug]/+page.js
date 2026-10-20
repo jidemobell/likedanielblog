@@ -6,20 +6,33 @@ const REDIRECTS = {
 };
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ params }) {
+export async function load({ params, fetch }) {
   const target = REDIRECTS[params.slug];
   if (target) {
     throw redirect(301, `/blog/${target}`);
   }
 
+  let post;
   try {
-    const post = await import(`../../../posts/${params.slug}.md`);
-    return {
-      content: post.default,
-      metadata: post.metadata,
-      slug: params.slug,
-    };
+    post = await import(`../../../posts/${params.slug}.md`);
   } catch {
     throw error(404, `Post "${params.slug}" not found`);
   }
+
+  // A "study" belongs to /studies, not here.
+  if ((post.metadata?.format ?? 'dialogue') === 'study') {
+    throw redirect(301, `/studies/${params.slug}`);
+  }
+
+  const all = await fetch('/api/posts').then((r) => r.json());
+  const related = all
+    .filter((p) => p.slug !== params.slug && p.format !== 'study')
+    .slice(0, 4);
+
+  return {
+    content: post.default,
+    metadata: post.metadata,
+    slug: params.slug,
+    related,
+  };
 }

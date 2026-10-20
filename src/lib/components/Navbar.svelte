@@ -33,6 +33,9 @@
           <a class="nav-link {$page.url.pathname.startsWith('/blog') ? 'active' : ''}" href="/blog">Blog</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link {$page.url.pathname.startsWith('/studies') ? 'active' : ''}" href="/studies">Studies</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link {$page.url.pathname.startsWith('/about') ? 'active' : ''}" href="/about">About</a>
         </li>
         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
